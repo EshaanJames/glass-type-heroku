@@ -156,7 +156,7 @@ if classifier =='Random Forest Classifier':
     plot_confusion_matrix(rf_clf, X_test, y_test)
     st.pyplot()
 
-if classifier == 'Logistic Regression':
+if st.classifier == 'Logistic Regression':
   st.sidebar.subheader("Model Hyperparameters")
   c_value = st.sidebar.number_input("C", 1, 100, step = 1 )
   max_iter_input = st.sidebar.number_input("Maximum Iterations", 10, 10000, 10)
